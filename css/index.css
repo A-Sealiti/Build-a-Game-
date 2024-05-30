@@ -1,0 +1,101 @@
+body {
+    background-image: url(/img/Achtergornd\ style\ elk\ spel.png);
+    background-size: 1920px 980px;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-y: hidden; /* Verticaal scrollen uitgeschakeld */
+}
+
+
+.boterkaaseieren-button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    height: 760px;
+    margin-top: 15px;
+    margin-left: 240px;
+    
+
+}
+
+.zeeslag-button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    height: 700px;
+    margin-top: 15px;
+    margin-left: 185px;
+    width: 100px;
+    height: 100px;
+    
+}
+ .zeeslag-button img { 
+ 
+    width: 300px; 
+    height: 180px; 
+    border: none;
+    background-color: transparent;
+    border:2px  solid brown;
+}  
+
+
+.whackamole-button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    height: 750px;
+    margin-top: 10px;
+    margin-left: 460px;
+    
+   
+}
+
+.bke-container {
+    background-color: #f0f0f0; 
+    block-size: 300px;
+    inline-size: 300px;
+    padding: 10px;
+    position: relative;
+    left: 235px;
+    bottom: 270px;
+    margin-top: 15px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0.5, 0.4, 0.3, 0.5); 
+}
+
+
+h2 {
+    background-color: rgba(170, 170, 170, 0.616);
+    box-shadow: 0 4px 8px black;
+    padding: 5px; }
+
+ .zeeslag-container {
+    background-color: #f0f0f0; 
+    block-size: 300px;
+    inline-size: 300px;
+    padding: 10px;
+    position: relative;
+    left: 735px;
+    bottom: 600px;
+    margin-top: 15px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0.5, 0.4, 0.3, 0.5);
+ }
+    
+
+    .whackamole-container {
+        background-color: #f0f0f0; 
+        block-size: 300px;
+        inline-size: 300px;
+        padding: 10px;
+        position: relative;
+        left: 1300px;
+        bottom: 932px;
+        margin-top: 15px;
+        border-radius: 10px; 
+        box-shadow: 0 4px 8px rgba(0.5, 0.4, 0.3, 0.5);
+    }
+   
+  
+

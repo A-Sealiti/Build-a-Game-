@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/css/Zeeslag.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeslag</title>
+</head>
+
+<body>
+    <header>
+        <h1> Zeeslag</h1>
+    </header>
+    <div>
+        <a href="index.html"><img src="imgzeeslag/home.png" alt="home"> </a>
+        <main>
+            <div class="border"></div>
+
+
+           
+            <div class="computer-score" id="computer-score">Computer Score: 0</div>
+            <div class="player-score" id="player-score">Speler Score: 0</div>
+
+            <div id="gamesboard-container"></div>
+
+
+
+            <div class="option-container">
+                <div class="destroyer-preview destroyer" draggable="true"></div>
+                <div class="submarine-preview submarine" draggable="true"></div>
+                <div class="cruise-preview cruise" draggable="true"></div>
+                <div class="battleship-preview battleship" draggable="true"></div>
+                <div class="carrier-preview carrier" draggable="true"></div>
+            </div>
+
+
+
+
+            <div class="message-box">
+                <div id="player-message-box"></div>
+                <div id="computer-message-box"></div>
+            </div>
+
+
+            <div class="player">
+                <label for="player-name"></label>
+                <span id="player-name-display"></span>
+            </div>
+            <div class="computer">
+                <label for="computer-name"></label>
+                <span id="computer-name-display"></span>
+            </div>
+
+
+            <button id="flip-button">FLIP</button>
+            <button id="strat-button">START</button>
+
+
+        </main>
+        <script src="./javascript/Zeeslag.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+:root {
+  --destroyer-color: black;
+  --submarine-color: green;
+  --cruise-color: rgb(180, 221, 56);
+  --battleship-color: yellowgreen;
+  --carrier-color: blue;
+}
+  .board {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-gap: 5px;
+    margin: 20px auto;
+    margin-left: 600px;
+  }
+  h1{
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 750px;
+    background-color: aqua  ;
+    font-family: sans-serif;
+    border-radius: 30px;
+    font-size: 60px;
+    border-style:outset;
+    color:  rgb(32, 6, 6);
+    border-color: rgba(212, 32, 146, 0.904);
+    filter: drop-shadow(10px 8px 8px blue);
+  }
+  img{
+    filter: drop-shadow(12px 10px 10px );
+  }
+  body{
+    background: url(/img/Achtergornd\ style\ elk\ spel.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  }
+
+
+ #gamesboard-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 600px;
+  perspective: 800px; /* Perspectief voor 3D-effect */
+}
+
+.game-board {
+  margin-top: 180px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  transform-style: preserve-3d; /* Behoud 3D-transformaties */
+  transform: rotateX(60deg) rotateY(0deg); /* Voeg een X- en Y-rotatie toe voor het 3D-effect */
+  transition: transform 0.3s ease-in-out; /* Voeg een overgang toe voor vloeiende animatie */
+}
+ .block{
+    width: 20px;
+    height: 20px;
+    border: solid 1px black;
+    box-sizing: border-box;
+    
+ }
+
+
+
+  .option-container{
+    width: 500px;
+    height: 60px;
+    margin: 30px 0;
+    background-color: bisque;
+    display: flex;
+    align-items: center;
+    margin-left: 600px;
+    margin-top: 50px;
+   
+  }
+
+
+  
+  .destroyer {
+    background-color: black;
+  }
+
+  .submarine {
+    background-color: green;
+  }
+  .cruise{
+    background-color: rgb(180, 221, 56);
+  }
+  .battleship{
+    background-color:  yellowgreen;
+  }
+
+  .carrier{
+    background-color: blue;
+  }
+  .destroyer-preview {
+    width: 20px;
+    height: 10px;
+    margin: 3px;
+  }
+  .submarine-preview {
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+  }
+  .cruise-preview{
+    width: 30px;
+    height: 10px;
+    margin: 3px;
+  }
+  .battleship-preview{
+    width: 40px;
+    height: 10px;
+    margin: 3px;
+  }
+  .carrier-preview{
+    width: 50px;
+    height: 10px;
+    margin: 3px;
+  } 
+  
+  #flip-button {
+    position: relative;
+    bottom: 200px;
+  }
+  #strat-button{
+    position: relative;
+    bottom: 200px;
+  }
+
+.destroyer-preview,
+.submarine-preview,
+.cruise-preview,
+.battleship-preview,
+.carrier-preview {
+  transform-style: preserve-3d;
+  transform: rotateX(10deg) rotateY(10deg);
+  transition: transform 3s ease-in-out;
+}
+
+.player {
+  position: relative;
+  bottom: 575px;
+  margin-left: 670px;
+  border: 4px solid blue;
+  width: 90px;
+  height: 20px;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  flex-basis: 50%;
+}
+
+.computer {
+  position: relative;
+  bottom: 600px;
+  margin-left: 950px;
+  border: 4px solid blue;
+  width: 90px;
+  height: 20px;
+  border-radius: 60px;
+  text-align: center;
+  display: flex;
+  flex-basis: 50%;
+}
+
+.computer-score {
+  float: right;
+  margin: 50px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fefefe;
+  padding: 10px;
+  width: 120px;
+}
+
+.player-score {
+  float: left;
+  margin: 50px;
+  border: 2px solid blue;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fefefe;
+  padding: 10px;
+  width: 120px;
+}
+.message-box{
+  margin-left: 650px;
+  margin-top: 70px;
+  border-radius: 20px;
+  border: 2px solid black;
+  width: 400px;
+  height: 80px;
+  box-shadow: #fefefe;
+  background-color: #FFF8DC;
+  text-align: center;
+}
